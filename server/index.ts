@@ -2,7 +2,7 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
-const router = app.get("/api", (c) => {
+const serverRouter = app.get("/api", (c) => {
   const people = [
     { id: 1, name: "yuvraj" },
     { id: 2, name: "vidhya" },
@@ -12,5 +12,5 @@ const router = app.get("/api", (c) => {
   ];
   return c.json(people);
 });
-export type AppType = typeof router;
+export type AppType = typeof serverRouter;
 export default app;
