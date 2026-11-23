@@ -5,12 +5,12 @@ import { seed } from "drizzle-seed";
 const seedDB = async () => {
   try {
     await seed(db, schema).refine((f) => ({
-      usersTable: {
+      user: {
         count: 10,
         columns: {
           name: f.fullName({ isUnique: true }),
           email: f.email(),
-          password: f.string(),
+          image: f.string(),
         },
       },
     }));
