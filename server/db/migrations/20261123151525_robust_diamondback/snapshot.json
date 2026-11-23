@@ -1,0 +1,63 @@
+{
+  "type": "diff",
+  "version": "10",
+  "dialect": "postgres",
+  "id": "e7f23d9d-807a-4fef-8a9c-59814bded83a",
+  "prevIds": [
+    "b9bbcbcd-3e02-4c5c-8004-e214e0ff1f1b"
+  ],
+  "footprints": [
+    {
+      "statementType": "alter_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "users",
+        "createdAt"
+      ],
+      "writes": [
+        "s|colprop|public.users.createdAt.default"
+      ],
+      "reads": [
+        "n|tbl|public.users",
+        "n|sch|public",
+        "n|col|public.users.createdAt"
+      ],
+      "sqlHash": "50a2de1a5d4aa2b4"
+    },
+    {
+      "statementType": "alter_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "users",
+        "updatedAt"
+      ],
+      "writes": [
+        "s|colprop|public.users.updatedAt.default"
+      ],
+      "reads": [
+        "n|tbl|public.users",
+        "n|sch|public",
+        "n|col|public.users.updatedAt"
+      ],
+      "sqlHash": "b6169ad1dddb9904"
+    }
+  ],
+  "deltas": [
+    {
+      "op": "alter",
+      "key": "columns\u0000[\"public\",\"users\",\"createdAt\"]",
+      "set": {
+        "default": "now()"
+      }
+    },
+    {
+      "op": "alter",
+      "key": "columns\u0000[\"public\",\"users\",\"updatedAt\"]",
+      "set": {
+        "default": "now()"
+      }
+    }
+  ]
+}
