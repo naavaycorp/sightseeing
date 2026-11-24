@@ -12,7 +12,7 @@ type People = {
 const family = ref<People[]>([]);
 
 onMounted(async () => {
-  const resp = await client.api.$get();
+  const resp = await client.api.people.$get();
   const result = await resp.json();
   family.value = result;
 });
