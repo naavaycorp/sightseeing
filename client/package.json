@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lucide/vue": "^1.80.0",
     "@tailwindcss/vite": "^4.3.5",
     "tailwindcss": "^4.3.5",
     "vue": "^3.5.44",
@@ -18,6 +19,7 @@
     "@types/node": "^24.19.2",
     "@vitejs/plugin-vue": "^6.0.10",
     "@vue/tsconfig": "^0.9.1",
+    "daisyui": "^5.8.2",
     "typescript": "~6.0.3",
     "vite": "^8.3.6",
     "vue-tsc": "^3.3.14"
